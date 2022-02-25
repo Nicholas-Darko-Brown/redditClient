@@ -15,7 +15,6 @@
     min-width: 250px;
     text-align: left;
     color: white;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -25,6 +24,5 @@
 
 .mainHeader h1 span {
     font-weight: 100;
-    font-style: italic;
     text-transform: capitalize;
 }

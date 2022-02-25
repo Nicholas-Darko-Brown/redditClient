@@ -17,7 +17,7 @@ export const Header = () => {
     return (
         <header className={styles.mainHeader}>
             <Link to="/">
-                <h1 onClick={onTitleClicked}>Reddit<span>Minimal</span></h1>
+                <h1 onClick={onTitleClicked}>Reddit<span>Client</span></h1>
             </Link>
             <SearchBar className={styles.searchBar} />
         </header>
