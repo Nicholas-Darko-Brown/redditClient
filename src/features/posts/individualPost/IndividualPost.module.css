@@ -8,6 +8,7 @@
     margin: 0 5% 5% 0;
     padding: 5%;
     background-color: white;
+    border-radius: 5px;
 }
 
 .postBody {
@@ -50,15 +51,17 @@
     margin-bottom: 1.5rem;
     margin-top: 1rem;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .goBack:hover {
-    background-color: red;
+    background-color: orangered;
     color: white;
+    transition: all 0.3s ease-in;
 }
 
 .goBack:active {
-    background-color: red;
+    background-color: orangered;
     color: white;
     border: none;
 }

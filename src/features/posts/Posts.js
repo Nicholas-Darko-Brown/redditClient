@@ -1,10 +1,7 @@
 import React from 'react';
 import styles from './Posts.module.css';
 import {Link} from 'react-router-dom';
-
 import { useSelector, useDispatch } from 'react-redux';
-
-
 import { PostFooter } from './postFooter/PostFooter';
 import { Likes } from './likes/Likes';
 import {changeActivePostId} from './individualPost/individualPostSlice';
