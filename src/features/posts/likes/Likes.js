@@ -1,27 +1,30 @@
 import React from 'react';
-
 import styles from './Likes.module.css';
 import { upArrow, downArrow } from '../../../app/utils';
 
 export const Likes = (props) => {
+    //set the arrow color, revert the opposite arrow color and change the votes number color
+    //set the arrow color and revert the votes number color
     const onUpArrowClicked = (e) => {
-        if (e.target.firstChild.getAttribute("fill") === "black") {         //set the arrow color, revert the opposite arrow color and change the votes number color
+        if (e.target.firstChild.getAttribute("fill") === "black") {         
             e.target.firstChild.setAttribute("fill", "green");
             e.target.parentNode.lastChild.firstChild.setAttribute("fill", "black");
             e.target.parentNode.children[1].style.color = "green";
         } else {
-            e.target.firstChild.setAttribute("fill", "black");              //set the arrow color and revert the votes number color
+            e.target.firstChild.setAttribute("fill", "black");              
             e.target.parentNode.children[1].style.color = "black";
         }
     }
 
+    //set the arrow color, revert the opposite arrow color and change the votes number color
+    //set the arrow color and revert the votes number color
     const onDownArrowClicked = (e) => {
-        if (e.target.firstChild.getAttribute("fill") === "black") {         //set the arrow color, revert the opposite arrow color and change the votes number color
+        if (e.target.firstChild.getAttribute("fill") === "black") {         
             e.target.firstChild.setAttribute("fill", "red");
             e.target.parentNode.firstChild.firstChild.setAttribute("fill", "black");
             e.target.parentNode.children[1].style.color = "red";
         } else {
-            e.target.firstChild.setAttribute("fill", "black");              //set the arrow color and revert the votes number color
+            e.target.firstChild.setAttribute("fill", "black");              
             e.target.parentNode.children[1].style.color = "black";
         }
     }

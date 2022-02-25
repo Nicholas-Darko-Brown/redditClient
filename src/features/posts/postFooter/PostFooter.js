@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
 import { Comments } from '../comments/Comments';
-
 import styles from './PostFooter.module.css';
 
 export const dateCalculator = (created) => {
