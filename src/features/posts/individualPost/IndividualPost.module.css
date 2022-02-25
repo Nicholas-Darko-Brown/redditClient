@@ -3,15 +3,12 @@
     width: 66%;
 }
 
-
 .post {
     display: flex;
     margin: 0 5% 5% 0;
     padding: 5%;
     background-color: white;
-
 }
-
 
 .postBody {
     width: 100%;

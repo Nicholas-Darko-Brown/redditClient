@@ -1,15 +1,10 @@
 import React from 'react';
 import styles from './IndividualPost.module.css';
-
 import { useSelector } from 'react-redux';
-
-
 import { PostFooter } from '../postFooter/PostFooter';
 import { Likes } from '../likes/Likes';
 import { Link } from 'react-router-dom';
 import {backArrow} from '../../../app/utils';
-
-
 
 export const IndividualPost = () => {
     const posts = useSelector(state => state.posts);
