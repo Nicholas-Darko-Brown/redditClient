@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-
 import styles from './Comments.module.css';
-
 import { getPostComments } from '../../../app/Reddit';
 import { dateCalculator } from '../postFooter/PostFooter';
 
@@ -32,5 +30,3 @@ export const Comments = (props) => {
         </div>
     );
 };
-
-//{console.log(JSON.stringify(comment))}
