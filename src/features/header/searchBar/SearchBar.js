@@ -8,7 +8,8 @@ import {changeActiveSearch} from './searchBarSlice';
 export const SearchBar = () => {
     const dispatch = useDispatch();
     
-    const activeSubSliced = useSelector(state => state.subreddits.activeSubreddit).slice(3, -1);
+    //Could be added to placeholder for browsing subreddit
+    //const activeSubSliced = useSelector(state => state.subreddits.activeSubreddit).slice(3, -1);
     const searchBarValue = useSelector(state => state.search);
     
     const onTextChange = (e) => {
@@ -19,7 +20,7 @@ export const SearchBar = () => {
         <input className={styles.searchBar}
             id="Search"
             value={searchBarValue}
-            placeholder={"Search posts in " + activeSubSliced}
+            placeholder="Search anything here..."
             onChange={onTextChange}
         />
     );
