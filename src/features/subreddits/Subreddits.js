@@ -1,16 +1,10 @@
 import React from 'react';
 import styles from './subreddits.module.css';
-
 import { Link } from 'react-router-dom';
-
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import { getSubreddits } from '../../app/Reddit';
 import { addSubreddit, changeActiveSubreddit } from './subredditsSlice';
-
-
-
 
 export const Subreddits = (props) => {
     const activeSub = useSelector(state => state.subreddits.activeSubreddit);
@@ -46,11 +40,3 @@ export const Subreddits = (props) => {
         </section>
     );
 }
-
-
-/*
-const images = document.querySelectorAll('.subreddits ul li img');
-
-images.forEach(image => {
-    !image.complete ? image.src = "../../assets/images/redditLogo.png" : image.src = "../../assets/images/redditLogo.png";
-}); */
